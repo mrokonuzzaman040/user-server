@@ -1,12 +1,3 @@
 const espress = require('express');
 const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello World');
-}
-
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-}
-
-// Path: package.json
+const port = process.env.PORT || 5000;
